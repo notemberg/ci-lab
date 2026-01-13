@@ -7,7 +7,8 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-
+    env:
+      APP_ENV: test
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -21,7 +22,7 @@ jobs:
           echo "Branch: $GITHUB_REF"
           echo "Commit: $GITHUB_SHA"
           echo "Runner OS: $RUNNER_OS"
-          
+
   build:
     needs: test
     runs-on: ubuntu-latest
