@@ -2,7 +2,7 @@ name: Simple CI Lab
 
 on:
   push:
-    branches: [ main ]
+    branches: [ dev ]
 
 jobs:
   test:
