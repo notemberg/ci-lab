@@ -22,8 +22,8 @@ jobs:
           echo "Commit: $GITHUB_SHA"
           echo "Runner OS: $RUNNER_OS"
           
-    build:
-      needs: test
-      runs-on: ubuntu-latest
-      steps:
-        - run: echo "Building app"
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Building app"
